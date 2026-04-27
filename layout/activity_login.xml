@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#F0F8FF"> <!-- Светло-небесный фон AliceBlue -->
+
+    <!-- Милая иконка (звёздочка) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🌟"
+        android:textSize="72sp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Название приложения -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EduMonitor"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#5C6BC0"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Карточка с полями -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="#FFFFFF"
+        android:layout_marginBottom="24dp">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+            
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Вход"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#3949AB"
+                android:gravity="center"
+                android:layout_marginBottom="24dp"/>
+
+            <EditText
+                android:id="@+id/loginInput"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:hint="Твой Email"
+                android:inputType="textEmailAddress"
+                android:paddingHorizontal="20dp"
+                android:background="@drawable/rounded_edittext"
+                android:textColorHint="#9FA8DA"
+                android:textColor="#3949AB"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/passwordInput"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:hint="Пароль"
+                android:inputType="textPassword"
+                android:paddingHorizontal="20dp"
+                android:background="@drawable/rounded_edittext"
+                android:textColorHint="#9FA8DA"
+                android:textColor="#3949AB"
+                android:layout_marginBottom="24dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Войти"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:backgroundTint="#5C6BC0"
+                android:textColor="#FFFFFF"
+                app:cornerRadius="16dp"/>
+                
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Кнопка-переключатель "Нет аккаунта?" -->
+    <TextView
+        android:id="@+id/tv_toggle_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Нет аккаунта? Зарегистрируйся"
+        android:textSize="16sp"
+        android:textColor="#3949AB"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackgroundBorderless"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:indeterminateTint="#5C6BC0"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
