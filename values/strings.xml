@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EduMonitor</string>
+    <string name="login">Войти</string>
+    <string name="register">Зарегистрироваться</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Пароль</string>
+    <string name="select_role">Выберите роль</string>
+    <string name="role_student">Ученик</string>
+    <string name="role_teacher">Учитель</string>
+    <string name="select_subject">Выберите предмет</string>
+    <string name="select_grade">Выберите класс</string>
+    <string name="start_test">Начать тест</string>
+    <string name="next_question">Следующий →</string>
+    <string name="finish_test">Завершить</string>
+    <string name="your_result">Ваш результат</string>
+    <string name="retry">Пройти ещё раз</string>
+    <string name="home">На главную</string>
+    <string name="teacher_panel">Панель учителя</string>
+    <string name="analytics">Аналитика</string>
+    <string name="logout">Выйти</string>
+    <string name="math">Математика</string>
+    <string name="russian">Русский язык</string>
+    <string name="english">Английский язык</string>
+    <string name="total_students">Учеников</string>
+    <string name="avg_score">Средний балл</string>
+</resources>
